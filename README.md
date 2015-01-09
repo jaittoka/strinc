@@ -7,23 +7,19 @@ Simple example
 ```
 var Strinc = require('strinc');
 var generate = Strinc();
-
-for (var i = 0; i < 10; i++)
-  console.log(generate());
+var output = [];
+for (var i = 0; i < 100; i++)
+  output.push(generate());
+console.log(output.join(', '));
 ```
 
 Will output:
 ```
-a
-b
-c
-d
-e
-f
-g
-h
-i
-j
+a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, 
+x, y, z, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, 
+U, V, W, X, Y, ba, bb, bc, bd, be, bf, bg, bh, bi, bj, bk, bl, bm, bn, 
+bo, bp, bq, br, bs, bt, bu, bv, bw, bx, by, bz, bA, bB, bC, bD, bE, 
+bF, bG, bH, bI, bJ, bK, bL, bM, bN, bO, bP, bQ, bR, bS, bT, bU, bV, bW
 ```
 
 Without arguments Strinc will create a generator function using standard english alphabet letters.
