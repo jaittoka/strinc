@@ -63,9 +63,10 @@ Predefined alphabets
 Strinc has some predefined alphabets for your convinience:
 
 ```
-  Strinc.OCT
-  Strinc.HEX
-  Strinc.BIN
+  Strinc.BIN - binary numbers
+  String.DEC - decimal numbers
+  Strinc.OCT - octal numbers
+  Strinc.HEX - hexadecimal numbers
 ```
 
 So if you want to generate hexadecimal number strings, do:
