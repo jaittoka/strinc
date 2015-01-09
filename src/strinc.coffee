@@ -10,10 +10,10 @@ Gen = (alpha = Gen.STR, n = [ 0 ]) ->
     carry = true
     pos = 0
     while carry
-      if n[pos] is L - 1
+      if n[pos] + 1 >= L
         n[pos] = 0
         pos++
-        n.push -1 if pos + 1 > n.length
+        n.push 0 if pos >= n.length
       else
         n[pos] = n[pos] + 1
         carry = false
