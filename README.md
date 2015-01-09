@@ -5,7 +5,7 @@ Simple example
 --------------
 
 ```
-var Strinc = require('./strinc');
+var Strinc = require('strinc');
 var generate = Strinc();
 
 for (var i = 0; i < 10; i++)
@@ -34,7 +34,7 @@ Advanced example
 You can give your own alphabet to Strinc:
 
 ```
-var Strinc = require('./strinc');
+var Strinc = require('strinc');
 var generate = Strinc('01');
 
 for (var i = 0; i < 10; i++)
@@ -72,7 +72,7 @@ Strinc.HEX - hexadecimal numbers
 So if you want to generate hexadecimal number strings, do:
 
 ```
-var Strinc = require('./strinc');
+var Strinc = require('strinc');
 var generate = Strinc(Strinc.HEX);
 
 for (var i = 0; i < 20; i++)
@@ -112,7 +112,7 @@ do it using `Strinc.parse()` function.
 Example: YOu have a hexadecimal id `a4c6` from which you want to continue id generation.
 
 ```
-var Strinc = require('./strinc');
+var Strinc = require('strinc');
 var generate = Strinc.parse("a4c6", Strinc.HEX);
 
 for (var i = 0; i < 10; i++)
