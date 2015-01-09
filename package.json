@@ -1,0 +1,22 @@
+{
+  "name": "strinc",
+  "version": "0.1.1",
+  "description": "Incremental string generator",
+  "author": "Jukka Aittokallio <jukka@aittokallio.com>",
+  "keywords": [
+    "incremental",
+    "id",
+    "generator",
+    "string"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaittoka/strinc.git"
+  },
+  "licence": "MIT",
+  "main": "lib/strinc",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "^0.12.0"
+  }
+}
