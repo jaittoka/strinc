@@ -1,5 +1,5 @@
 
-Gen = (alpha = Gen.STR, n = [ 0 ]) ->
+Strinc = (alpha = Strinc.STR, n = [ 0 ]) ->
   L = alpha.length
     
   for v in n 
@@ -23,14 +23,14 @@ Gen = (alpha = Gen.STR, n = [ 0 ]) ->
     inc() 
     r
 
-Gen.STR = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY"
-Gen.DEC = "0123456789"
-Gen.HEX = "0123456789abcdef"
-Gen.OCT = "01234567"
-Gen.BIN = "01"
+Strinc.STR = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY"
+Strinc.DEC = "0123456789"
+Strinc.HEX = "0123456789abcdef"
+Strinc.OCT = "01234567"
+Strinc.BIN = "01"
 
-Gen.parse = (str, alpha = Gen.STR) ->
+Strinc.parse = (str, alpha = Strinc.STR) ->
   n = (alpha.indexOf(i) for i in str).reverse()
-  Gen alpha, n
+  Strinc alpha, n
 
-module.exports = Gen
+module.exports = Strinc
