@@ -63,6 +63,7 @@ Predefined alphabets
 Strinc has some predefined alphabets for your convinience:
 
 ```
+Strinc.STR = english alphabet (low and high cap letters)
 Strinc.BIN - binary numbers
 String.DEC - decimal numbers
 Strinc.OCT - octal numbers
