@@ -1,0 +1,2 @@
+# strinc
+Incremental string generator
