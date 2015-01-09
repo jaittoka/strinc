@@ -7,16 +7,14 @@ Gen = (alpha = Gen.STR, n = [ 0 ]) ->
       throw new Error "strinc: One of the values in input array is out of alphabet."
 
   inc = () ->
-    carry = true
     pos = 0
-    while carry
+    loop
       if n[pos] + 1 >= L
-        n[pos] = 0
-        pos++
+        n[pos++] = 0
         n.push 0 if pos >= n.length
       else
-        n[pos] = n[pos] + 1
-        carry = false
+        n[pos]++
+        break
 
   make = () -> (alpha[c] for c in n).reverse().join('')
     
