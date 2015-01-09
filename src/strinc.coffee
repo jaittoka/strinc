@@ -24,6 +24,7 @@ Gen = (alpha = Gen.STR, n = [ 0 ]) ->
     r
 
 Gen.STR = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY"
+Gen.DEC = "0123456789"
 Gen.HEX = "0123456789abcdef"
 Gen.OCT = "01234567"
 Gen.BIN = "01"
