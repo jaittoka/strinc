@@ -1,6 +1,6 @@
 {
   "name": "strinc",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Incremental string generator",
   "author": "Jukka Aittokallio <jukka@aittokallio.com>",
   "keywords": [
